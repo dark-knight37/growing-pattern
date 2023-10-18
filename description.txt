@@ -1,0 +1,11 @@
+Seed: Given the coordinates of a seed point in a pattern, examine a region around the point to detect the pattern, gradually expand the region in all directions until the pattern stops.
+
+Grow: At each step, check the match quality of the current region with the template. If the quality drops below a certain threshold, stop expanding in that direction.
+
+Boundary: If the expansion crosses a boundary, check to see if the pattern crosses the boundary. If so, continue the expansion. If not, stop the expansion at the boundary. It only needs to work for this pdf: https://drive.google.com/file/d/1BsUh5qaXVn2eDnPbMgV0zI_BT710c6M_/view?usp=sharing
+
+See diagram here: https://docs.google.com/presentation/d/1L41q2fq4tqr12AeX4UbwudhpHhTiAbngS0XM-FtXxHQ/edit?usp=sharing
+
+Ideally we will use existing pattern-based region growing function(s), rather than write our own, eg regionprops.
+
+ChatGPT has some ideas about how to do it: https://docs.google.com/document/d/1FgV2AziuiXFcuvZmXeePYqwshNOMCou4pPofGjN3fus/edit?usp=sharing
